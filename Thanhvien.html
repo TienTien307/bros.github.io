@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THÀNH VIÊN</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid bg">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 mx-auto">
+				<form class="form-container">
+					<h2>Đăng nhập</h2>
+					<div class="form-group" id="form-login" >
+						<label for="myEmailSignUp">Tên đăng nhập</label>
+						<input type="email" name = "Email" class="form-control" placeholder="Username or Email">
+					</div>
+					<div class="form-group">
+						<label for="myPasswordSignUp">Mật khẩu</label>
+						<input type="password" name="Password" class="form-control" placeholder="Password">
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Ghi nhớ mật khẩu
+						</label>
+					</div>
+					<div class="form-group">
+					    <button type="button" class="btn btn-success btn-block" onclick="check(this.form)">Đăng nhập</button>
+					</div>
+					<div class="form-group">
+					    <p style="text-align: center; margin-top: 5px;"><a href="#">Quên mật khẩu?</a></p>
+					    <p class="note" style="text-align:center">Bạn chưa có tài khoản? Đăng ký <a href="#signUp" data-toggle="modal" >tại đây</a></p>
+                    </div>
+				</form>
+			</div>
+        </div>
+    </div>
+	  <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="signUpLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="signUpLabel" style="color: rgb(95, 183, 224);">Đăng ký</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<form class="createAcc">
+					<div class="form-group">
+						<label for="myEmail">Email</label>
+						<input type="email" name="myEmail" id = "myEmail" class="form-control" placeholder="Email">
+						</div>
+					<div class="form-group">
+						<label for="myUserName">Tên người dùng</label>
+						<input type="text" name="username" id = "username" class="form-control" placeholder="Username">
+					</div>
+					<div class="form-group">
+					<label for="myPassword">Mật khẩu</label>
+						<input type="password" name="myPassword" id="myPassword" class="form-control" placeholder="Password">
+					</div>	
+					<div class="form-group">
+						<label for="myPasswordConfirm">Xác nhận mật khẩu</label>
+						<input type="password" name="confirmPass" id = "confirmPass" class="form-control" placeholder="Password confirm">
+					</div>
+					<div class="form-group">
+						<label for="myPhone">Số điện thoại</label>
+						<input type="tel" name="Phone" id = "Phone" class="form-control" placeholder="Phone (null)">
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+			  <button type="button" class="btn btn-primary" id="Register">Đăng ký</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	<script> 
+		//  	function Dangnhap(){
+		// 		if (SignIn.Email.value == "TienTien")
+		// 		{
+		// 			if (SignIn.Password.value == '12345')
+		// 			{
+		// 				prompt ('Đăng nhập thành công!!!');
+		// 			}				 
+		// 		}
+		// 		else prompt('Sai tên đăng nhập hoặc mật khẩu.');
+		// 	}
+		//   Dangnhap();
+			function check(form){
+				if(form.Email.value == "TienTien" && form.Password.value == "123"){
+					alert("Đăng nhập thành công!!!");
+				}
+				else
+				{
+					alert("Sai tên đăng nhập hoặc mật khẩu.");
+				}
+			}
+	  </script>
+    <script src="Bootstrap/jquery.min.js"></script>
+    <script src="Bootstrap/popper.min.js"></script>
+    <script src="Bootstrap/bootstrap.min.js"></script>
+</body>
+
+<style>
+	/* Đăng nhập */
+    .bg{
+        background: url('IMG/bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+    }
+    .form-container{
+        border: 0px solid black ;
+        margin-top: 115px;
+        padding: 50px 60px;
+        width: 488px;
+        height: 500px;
+        background: white;
+        box-shadow: 9px 7px 52px 6px black;
+		color: rgb(95, 183, 224);
+		background: rgb(253, 244, 232);
+    }
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    label{
+        font-size: 18px;
+    }
+    p{
+        color: black;
+    }
+    .modal-content h5{
+		text-transform: uppercase;
+		font-size: 25px;
+	}
+	/* Đăng ký */
+
+	.form-group label{
+		color: rgb(95, 183, 224);
+	}
+	.form-group ::placeholder{
+		color: rgb(175, 170, 170);
+		font-size: 16px;
+		font-style: italic;
+	}
+</style>
+</html>

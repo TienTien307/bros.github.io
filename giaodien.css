@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background:rgb(253, 236, 214) ;
+}
+body{
+    background: rgb(253, 236, 214);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner{
+    color: rgb(238, 163, 176);
+    background-color: #2d2d2d;
+    font-size: 55px;
+    text-align: center;
+    height: 90px;
+    width: 100%;
+}
+.navbar-nav li a:hover{
+    color: rgb(238, 163, 176) !important;
+}
+.dropdown-menu{
+    background: #f8f9fa;
+    border: none;
+    top: 95%;
+}
+.dropdown-menu a{
+    font-size: 15px;
+}
+.dropdown-menu a:hover{
+    border-bottom: black 1px solid;
+    color: rgb(247, 103, 103) !important;
+    transition:0.3s;
+}
+.nav-link{
+    color:  black !important; 
+    font-weight: bold;
+    font-size: 16px;
+}    
+.nav-bar{
+    z-index: 2; 
+    position: absolute;
+    top: 44%;
+    transform: translateY(-20%);
+}
+.nav-bar a{
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    color: rgb(247, 103, 103);
+    text-transform:uppercase;
+    padding: 15px 0px 15px 10px;
+    margin: 5px;
+    width:210px;
+    font-weight: 550;
+    letter-spacing: 1.5px;
+    box-shadow: 2px 2px 16px 0px rgb(170, 169, 169);
+    position: relative;
+    margin-left: -150px;
+    transition: 0.5s ease;
+}
+.nav-bar a span{
+    float: right;
+    width: 60px;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: rgb(247, 183, 193);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.nav-bar a span i{
+    font-size: 25px;
+}
+.nav-bar a:hover{
+    margin-left: 5px;
+}
+.content{
+    width: 1100px;
+    height: 2250px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 250px;
+    box-shadow: 0px 5px 5px 0px black;
+}
+.carousel-control-prev {
+    left: 250px;
+    height: 562px;
+    top: 265px;
+}
+.carousel-control-next {
+    right: 200px;
+    height: 562px;
+    top: 265px;
+}
+.carousel-item{
+    height: 600px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+.carousel-caption{
+    margin-bottom: 220px;
+}
+.carousel-caption h5{
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 25px;
+    font-family: merienda;
+    color: black;
+    font-weight: bold;
+}
+ .carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: poppins;
+    color: black;
+}/*
+.carousel-caption a{
+    text-transform: uppercase;
+    background: #262626;
+    padding: 5px 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 15px;
+} 
+*/
+.catalogue h2{
+    margin-top: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(247, 103, 103);
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.wrapper{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.new-box {
+    width: calc(25% - 5px);
+    border: 1px dotted black;
+    background: rgb(230, 220, 220);
+}
+.new-box img {
+    max-width: 100%;
+}
+.new-box .buyit{
+    width: 48%;
+    margin: 10px 1px 2px 2px ; 
+    padding: 3px;
+    background: black;
+    color: white; 
+    border: 1px solid black;
+    opacity: 0.7;
+}
+.new-box .buyit:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;  
+    transition: 0.2s;
+    opacity: 100%;
+}
+.new-box .namesp{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(247, 103, 103);
+}
+.new-box .price{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* feedback */
+.catalogue-feedback .new-box {
+    /* background: rgb(230, 220, 220); */
+    padding: 10px;
+    border-radius: 20px;
+}
+.catalogue-feedback .new-box img{
+    margin-left: 85px;
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+.catalogue-feedback .new-box h5{
+    margin-top: 20px;
+    text-align: center;
+    /* color: rgb(247, 103, 103); */
+}
+.catalogue-feedback .new-box p{
+    font-style: italic !important;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.button{
+    background: white;
+    margin-left: 500px;
+    padding: 6px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 110px;
+    border: 1px solid black;
+}
+.button:hover{
+    background: black;
+    color: white;    
+}
+
+/* footer */
+footer{
+    background: #313030;
+    color: rgb(156, 152, 152);
+    height: 300px;
+    width: 100%;
+    margin-bottom: 0px;
+    position: relative;
+}
+ footer .footer-content{
+    height: 270px;
+    display: flex;
+    color: white;
+}
+.footer-section{
+    flex: 1;
+    padding: 25px;
+    border: 1px solid rgb(56, 55, 55);
+    padding-left: 100px;
+}
+.footer-section h4{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.footer-section a{
+    text-decoration: none;
+    color: white;
+}
+.footer-section a:hover{
+    color: rgb(247, 103, 103);
+    transition: 0.3s;
+}
+.about p{
+    padding-top: 5px;
+}
+.contact ul{
+    list-style: none;
+    padding-top: 10px;
+ }
+ .contact span{
+     margin-right: 10px;  
+     font-size: 22px;
+ }
+ .social a{
+    border: 1px dotted gray;
+    width: 38px;
+    height: 38px;
+    padding-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+}
+.social .text-input{
+    width: 350px;
+    background: #272727;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    padding: 3px;
+    color: white;
+}
+.social .text-input:focus{
+    background: #7f7d7d;
+}
+.social a:hover{
+    border: 1px solid rgb(247, 103, 103);  
+}
+.social .btn-send{
+    width: 80px;
+    border-radius: 5px;
+}
+.social .btn-send:hover{
+    border: 2px solid rgb(247, 103, 103);  
+}
+footer .footer-bottom{
+    position: absolute;
+    background: #444343;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    left: 0px;
+    padding-top: 5px;
+}
+@media(max-width: 988px){
+    .mx-auto{
+        margin: 0px !important;
+    }
+}
